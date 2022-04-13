@@ -1,13 +1,168 @@
-body {
+* { 
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container {
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 30px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);  
+
+}
+
+header {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+header .left-button{
+  padding: 150px;
+  position: absolute;
+  border: none;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 20%;
+
+  background-color: rgb(116, 187, 245);
+  margin-top: -240px;
+  margin-left: -110px;
+
+  overflow: hidden;
+  height: 30px;  
+
+}
+
+header h1 {
+  position: relative;
+  color: white;
+  font-size: 25px;
+
+}
+
+.btn { 
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  margin-top: -5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: rgb(116, 187, 245);
+
+}
+
+
+.btn:active {
+  transform: scale(.98);
+}
+
+input {
+  border: 1px solid rgb(116, 187, 245);
+}
+
+.form-container {
+  display: block;
+}
+
+.form-container label {
+  font-size: 17px;
+}
+
+.form-container input {
+  width: 100%;
+  margin: 5px 5px 20px;
+  padding: 5px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.form-control-check { 
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.form-control-check input {
+  height: 20px;
+  float: right;
+  border: 10px solid rgb(116, 187, 245);
+
+}
+
+.btn-block {
+  height: 70px;
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.task h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.task h4 span {
+  background-color: red;
+  padding: 0px 5px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+
+.task h6 {
+  font-size: 15px;
+  padding-top: 3px;
+  font-weight: 100;
+}
+
+.reminder { 
+  border-left: 5px solid rgb(116, 187, 245);
+}
+
+
+
+
+
+
+@media (max-width: 414px) {
+  
+  header .left-button{
+    padding: 150px;
+    margin-top: -250px;
+    margin-left: -160px;  
+  }
+  
+  header h1 {
+    font-size: 20px;
+  
+  }
+
+  .container {
+    margin: 0px auto;
+    min-height: 200px;
+    padding: 20px;
+
+  }
 }
